@@ -1,0 +1,83 @@
+body {
+  background-color: black;
+  color: #33ff33;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  overflow: hidden;
+}
+
+#matrix-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Wrapper centers terminal */
+#terminal-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+/* Terminal box */
+#terminal {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid #00ff00;
+  padding: 20px;
+  max-width: 700px;
+  width: 90%;
+  box-shadow: 0 0 10px #00ff00;
+  overflow-y: auto;
+  height: 400px;
+}
+
+/* Input/output styles */
+#terminal-output pre {
+  margin: 0 0 10px 0;
+  white-space: pre-wrap;
+}
+
+#input-line {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+#input-line span {
+  color: #00ff00;
+}
+
+#terminal-input {
+  background: black;
+  border: none;
+  outline: none;
+  color: #33ff33;
+  font-family: inherit;
+  font-size: 1em;
+  width: 100%;
+}
+
+/* Exit button */
+#back-to-light {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #00ff00;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  z-index: 2;
+  border-radius: 5px;
+}
+
+#back-to-light:hover {
+  background-color: #33ff33;
+}

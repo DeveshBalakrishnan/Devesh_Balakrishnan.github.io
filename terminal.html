@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Devesh's Terminal</title>
+  <link rel="stylesheet" href="terminal.css" />
+  <script defer src="matrix.js"></script>
+  <script defer src="terminal.js"></script>
+</head>
+<body>
+  <canvas id="matrix-canvas"></canvas>
+
+  <div id="terminal-wrapper">
+    <button id="back-to-light">☀️ Exit Terminal</button>
+
+    <div id="terminal">
+      <div id="terminal-output">
+        <pre>Welcome to Devesh's Cyber Terminal.
+Type <span class="cmd">help</span> to see available commands.</pre>
+      </div>
+      <div id="input-line">
+        <span>&gt;</span><input type="text" id="terminal-input" autofocus autocomplete="off" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
