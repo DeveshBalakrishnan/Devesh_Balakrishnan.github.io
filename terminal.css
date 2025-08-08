@@ -81,3 +81,30 @@ body {
 #back-to-light:hover {
   background-color: #33ff33;
 }
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #terminal {
+    height: 300px;
+    font-size: 0.9em;
+  }
+
+  #back-to-light {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+
+  #terminal-wrapper {
+    padding: 10px;
+  }
+}
+
+/* Better cursor focus visibility */
+#terminal-input:focus {
+  border-bottom: 1px solid #00ff00;
+}
