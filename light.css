@@ -66,3 +66,49 @@ footer {
   cursor: pointer;
   border-radius: 5px;
 }
+
+/* Enhancements */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .resume-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  section {
+    border-left: none;
+    border-top: 4px solid #ffaa66;
+  }
+}
+
+.resume-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #ffaa66;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.resume-button:hover {
+  background-color: #ff8a33;
+}
